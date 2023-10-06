@@ -24,14 +24,14 @@ const Navbar = () => {
         <>
         
         <HStack color="white" display={["none",'none',"flex"]} spacing='1em' p="1em">
-                <Box >Coder.</Box>
+                <Box fontWeight={"bold"} fontSize={"2em"}>Cod<Box as="span" color="colores.naranja">e</Box>r.</Box>
                 <Spacer />
                 <HStack zIndex="1" position={"fixed"} right={"1em"} >
-                    <Box as={'a'} bg="whiteAlpha.400" p="0.3em" borderRadius="1em" href="#">Inicio</Box>
-                    <Box as={'a'} bg="whiteAlpha.400" p="0.3em" borderRadius="1em" href="#">Sobre mi</Box>
-                    <Box as={'a'} bg="whiteAlpha.400" p="0.3em" borderRadius="1em" href="#">Servicios</Box>
-                    <Box as={'a'} bg="whiteAlpha.400" p="0.3em" borderRadius="1em" href="#">Portfolio</Box>
-                    <Box as={'a'} bg="whiteAlpha.400" p="0.3em" borderRadius="1em" href="#">Contacto</Box>
+                    <Box as={'a'} bg="whiteAlpha.400" p="0.3em" borderRadius="1em" href="#hero">Inicio</Box>
+                    <Box as={'a'} bg="whiteAlpha.400" p="0.3em" borderRadius="1em" href="#sobremi">Sobre mi</Box>
+                    <Box as={'a'} bg="whiteAlpha.400" p="0.3em" borderRadius="1em" href="#servicios">Servicios</Box>
+                    <Box as={'a'} bg="whiteAlpha.400" p="0.3em" borderRadius="1em" href="#proyectos">Proyectos</Box>
+                    <Box as={'a'} bg="whiteAlpha.400" p="0.3em" borderRadius="1em" href="#contacto">Contacto</Box>
                 </HStack>
         </HStack>
         <HStack  zIndex={"100"} display={["flex",'flex',"none"]} justifyContent={"end"} spacing='1em' p="1em">
@@ -50,11 +50,11 @@ const Navbar = () => {
             <MenuItem as="a" href="#sobremi">
             Sobre mi
             </MenuItem>
-            <MenuItem  as="a" href="#contacto" >
+            <MenuItem  as="a" href="#servicios" >
             Servicios
             </MenuItem>
             <MenuItem  as="a" href="#proyectos" >
-            Proyeectos
+            Proyectos
             </MenuItem>
             <MenuItem  as="a" href="#contacto" >
             Contacto

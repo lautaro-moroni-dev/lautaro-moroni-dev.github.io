@@ -28,19 +28,19 @@ const theme = extendTheme({ colors })
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ChakraProvider theme={theme} >
-      <Container id="hero" as={"header"}  minW={"100%"}  bgImage="url('mifoto.jpg')" bgColor="#cccccc"  backgroundRepeat="no-repeat" position="relative" bgPosition= "center" bgSize={["cover","cover","cover"]}>
+      <Container  id="hero" as={"header"}   minW={"100%"}  bgImage="url('mifoto.jpg')" bgColor="#cccccc"  backgroundRepeat="no-repeat" position="relative" bgPosition= "center" bgSize={["cover","cover","cover"]}>
         <Navbar />
         <Hero/>
       </Container> 
       <Container  as={"main"}  maxWidth={'container.2xl'} bgColor="colores.negro.100">
-      <Flex as={"section"}  flexWrap={["wrap",'wrap','nowrap']} justify={"center"} py="1em" minH={"100vh"} alignItems={"center"} color="white">
+      <Flex as={"section"}  flexWrap={["wrap",'wrap','nowrap']} justify={"center"} py="1em" minH={"80vh"} alignItems={"center"} color="white">
         <SobreMi/>
       </Flex>
       </Container>
       <Servicios  />
       <Proyectos/>
         <Contacto/>
-      <Box bgColor="colores.negro.100" color="colores.gris" p="1em">hola</Box>
+      <Box bgColor="colores.negro.100" color="colores.gris" p="1em">Copyright 2023.All Rights Reserved by Lautaro Moroni</Box>
     </ChakraProvider>    
   </React.StrictMode>,
 )

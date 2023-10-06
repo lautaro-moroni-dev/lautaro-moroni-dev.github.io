@@ -6,7 +6,7 @@ const Proyectos = () => {
         <Heading as="h2" textAlign="center" p="1em" >
              Proyectos
         </Heading>
-        <SimpleGrid color="colores.blanco" p="3em"   minChildWidth='20em'  columns={3} spacing={9} >
+        <SimpleGrid color="colores.blanco" p="3em"   minChildWidth={['10em','20em']}  columns={3} spacing={9} >
           <Card color="colores.blanco" bg="colores.negro.900" >
             <CardBody color={"white"} textAlign="center" p="5em">
                 <Icon as={FaPlus} />
